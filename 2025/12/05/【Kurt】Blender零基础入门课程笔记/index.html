@@ -1,0 +1,480 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>【Kurt】Blender零基础入门课程笔记 | Cosette's Blog</title><meta name="keywords" content="Blender"><meta name="author" content="Cosetteeeee"><meta name="copyright" content="Cosetteeeee"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Blender相关课程笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Kurt】Blender零基础入门课程笔记">
+<meta property="og:url" content="http://cosetteeeee.github.io/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Cosette&#39;s Blog">
+<meta property="og:description" content="Blender相关课程笔记">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E6%98%AF%E6%98%A5%E5%95%8A_%E6%A0%91%E4%B8%8A.jpg">
+<meta property="article:published_time" content="2025-12-05T10:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-05T10:00:00.000Z">
+<meta property="article:author" content="Cosetteeeee">
+<meta property="article:tag" content="Blender">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E6%98%AF%E6%98%A5%E5%95%8A_%E6%A0%91%E4%B8%8A.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://cosetteeeee.github.io/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"这篇文章已经有","messageNext":"天没有更新了，请注意内容的时效性！"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":1000},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: Cosetteeeee","link":"链接: ","source":"来源: Cosette's Blog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【Kurt】Blender零基础入门课程笔记',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-12-05 18:00:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E5%B0%91%E5%A5%B3%E5%A4%B4%E5%83%8F.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E6%98%AF%E6%98%A5%E5%95%8A_%E6%A0%91%E4%B8%8A.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Cosette's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 画廊</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【Kurt】Blender零基础入门课程笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-12-05T10:00:00.000Z" title="发表于 2025-12-05 18:00:00">2025-12-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-12-05T10:00:00.000Z" title="更新于 2025-12-05 18:00:00">2025-12-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【Kurt】Blender零基础入门课程笔记"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV14u41147YH?spm_id_from=333.788.videopod.episodes&amp;vd_source=328bbb870a2ad892385efdf965a3cb3c&amp;p=4">参考Blender教程</a></p>
+<h2 id="1-【基础篇】">1 【基础篇】</h2>
+<h3 id="1-1-下载与安装">1.1 下载与安装</h3>
+<p>Blender下载网址：</p>
+<p><a target="_blank" rel="noopener" href="https://www.blender.org/">https://www.blender.org/</a>(建议)</p>
+<p><a target="_blank" rel="noopener" href="https://www.blendercn.org/">https://www.blendercn.org/</a></p>
+<ul>
+<li>同一台电脑可以安装多个版本的Blender且互不干扰</li>
+</ul>
+<p><strong>编辑-偏好设置-界面-分辨率缩放</strong>：调整界面大小</p>
+<p><strong>编辑-偏好设置-视图切换-缩放-缩放到鼠标位置</strong>：以鼠标为中心缩放</p>
+<p><strong>编辑-偏好设置-视图切换-旋转&amp;平移-围绕选择物体旋转</strong>：围绕选中物体旋转视角</p>
+<h3 id="1-2-让手听话">1.2 让手听话</h3>
+<h4 id="1-2-1-视角的控制">1.2.1 视角的控制</h4>
+<p><strong>旋转视角</strong>：鼠标中键按住可旋转</p>
+<p><strong>平移视角</strong>：shift+鼠标中键</p>
+<p><strong>缩放视角</strong>：滚动鼠标中键</p>
+<h4 id="1-2-2-物体的控制">1.2.2 物体的控制</h4>
+<p><strong>移动物体</strong>：G</p>
+<p><strong>旋转物体</strong>：R</p>
+<p><strong>缩放物体</strong>：S</p>
+<p><strong>恢复变换</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>Alt+G</th>
+<th>Alt+R</th>
+<th>Alt+S</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>恢复位置</td>
+<td>恢复旋转</td>
+<td>恢复缩放</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><strong>新建物体</strong>：Shift+A</p>
+<p><strong>复制物体</strong>：Shift+D</p>
+<p><strong>删除物体</strong>：X或Delete</p>
+<p> </p>
+<p><strong>隐藏物体</strong>：H</p>
+<p><strong>显示隐藏物体</strong>：Alt+H</p>
+<p><strong>隐藏没有被选中的物体</strong>：Shift+H</p>
+<p> </p>
+<p><strong>选择物体</strong> 刷选：C 全选：A（按住Shift可以加选或者减选）</p>
+<h4 id="1-2-3-视图的切换">1.2.3 视图的切换</h4>
+<p><strong>~/`</strong>-视图Pie目录</p>
+<p><strong>7</strong>-顶视图，<strong>ctrl+7</strong>-底视图</p>
+<p><strong>1</strong>-前视图，<strong>ctrl+1</strong>-后视图</p>
+<p><strong>3</strong>-右视图，<strong>ctrl+3</strong>-左视图</p>
+<p><strong>9</strong>-反转当前视图</p>
+<p> </p>
+<p><strong>0</strong>：切换摄像机的视角</p>
+<p><strong>5</strong>:切换透视投影和正交投影</p>
+<p><strong>2，4，6，8</strong>：前后左右角度微调</p>
+<p><strong>+，-</strong>：缩放微调</p>
+<h3 id="1-3-认识界面">1.3 认识界面</h3>
+<h4 id="1-3-1-基本Workflow">1.3.1 基本Workflow</h4>
+<p>建模-布光-材质-渲染</p>
+<h4 id="1-3-2-快捷键">1.3.2 快捷键</h4>
+<p><strong>调用游标Pie目录</strong>：Shift+S</p>
+<p><strong>游标恢复到世界中心</strong>：Shift+c</p>
+<p><strong>移动游标</strong>：游标工具 或者 Shift+右键</p>
+<p><strong>最大化窗口</strong>：Ctrl+空格</p>
+<p><strong>隐藏界面上最碍眼的面板</strong>：N</p>
+<ul>
+<li>
+<p>G移动状态下，按住Ctrl，可以以每个方格增量为单位进行吸附。</p>
+</li>
+<li>
+<p>切换全局和局部坐标系：在G移动状态下按两次X,Y,Z</p>
+</li>
+</ul>
+<h4 id="1-3-3-重要概念">1.3.3 重要概念</h4>
+<p><strong>1</strong>、窗口面板可拆分，可互换</p>
+<p><strong>2</strong>、游标可以用来定位和当轴心点</p>
+<p><code>游标在哪里，新建物体就在哪里</code></p>
+<p><code>一般默认轴心点为原点，设置为游标后，轴心点为游标位置，旋转和缩放都会围绕游标位置进行</code></p>
+<p><strong>3</strong>、每个物体都有原点，在3D世界的计算机眼里，原点就是储存物体信息的数据点</p>
+<p><code>移动原点：右上角选项，勾选仅影响原点，按G移动原点位置，再关掉，否则无法移动物体</code></p>
+<p><code>Alt+G只恢复原点到世界中心，与物体位置无关</code></p>
+<h3 id="1-4-本章练习-珍珠耳环的少女">1.4 本章练习 珍珠耳环的少女</h3>
+<p><strong>？/</strong>：选中物体的单独显示</p>
+<ul>
+<li>图片属性深度在前可以让参考图显示在前面</li>
+</ul>
+<h2 id="2-【建模篇】">2 【建模篇】</h2>
+<h3 id="2-1-点线面的选择和控制">2.1 点线面的选择和控制</h3>
+<h4 id="2-1-1-模式切换">2.1.1 模式切换</h4>
+<p><strong>切换编辑模式</strong>：Tab</p>
+<p><strong>切换点线面</strong>：</p>
+<blockquote>
+<p>1-点模式</p>
+<p>2-线模式</p>
+<p>3-面模式</p>
+</blockquote>
+<h4 id="2-1-2-点线面的选择">2.1.2 点线面的选择</h4>
+<p><strong>选择工具的切换</strong>：W</p>
+<p><strong>框选</strong>：B</p>
+<p><strong>刷选</strong>：C（滚动鼠标可以改变鼠标大小，右键或者Esc结束刷选状态）</p>
+<p><strong>反选</strong>：Ctrl+I</p>
+<p><strong>多选</strong>：Shift</p>
+<p><strong>选择两个元素的最短路径</strong>：Ctrl</p>
+<p><strong>选择相连元素</strong>：L</p>
+<p><strong>循环选择</strong>:按住Alt+双击，就可以选择一个循环边</p>
+<p><strong>垂直方向的循环选择</strong>：Ctrl+Alt+双击</p>
+<p><strong>随机选择</strong>：左上方选择菜单-select random</p>
+<p><strong>加选</strong>：Ctrl+数字键盘加号</p>
+<p><strong>减选</strong>：Ctrl+数字键盘减号</p>
+<h4 id="2-1-3-点线面的控制">2.1.3 点线面的控制</h4>
+<p><strong>移动</strong>：G <strong>缩放</strong>：S <strong>旋转</strong>：R</p>
+<p><strong>删除</strong>：X（注意删除边和融并边的区别，删除会出现孔洞，融并会把剩下的边连起来）</p>
+<p><strong>法相/法线</strong>：指始终垂直某平面或者某切线的虚线，用来定义光线如何从曲面反弹的向量。</p>
+<p><strong>进入透视模式</strong>：Alt+z</p>
+<h3 id="4-【建模篇】十大建模操作">4 【建模篇】十大建模操作</h3>
+<h4 id="4-1-十大操作快捷键">4.1 十大操作快捷键</h4>
+<p><strong>1</strong>、挤出：E</p>
+<p>连续挤出：Ctrl+右键</p>
+<p><strong>2</strong>、向内挤出：I</p>
+<p><strong>3</strong>、倒角：Ctrl+B</p>
+<p><strong>4</strong>、循环切割：Ctrl+R</p>
+<p><strong>5</strong>、合并：M</p>
+<p><strong>6</strong>、断开：V</p>
+<p><strong>7</strong>、填充：F</p>
+<p>栅格填充：Ctrl+F</p>
+<p>栅格填充必须是偶数面</p>
+<p><strong>8</strong>、切刀：K</p>
+<p>按住鼠标右键或者空格键退出</p>
+<p><strong>9</strong>、桥接：Ctrl+E</p>
+<p>桥接必须是同一个物体，</p>
+<p>合并物体：Ctrl+J</p>
+<p><strong>10</strong>、分离：P</p>
+<h3 id="5-【建模篇】曲线建模、父子级和蒙皮修改器">5 【建模篇】曲线建模、父子级和蒙皮修改器</h3>
+<h4 id="5-1-曲线基础操作">5.1 曲线基础操作</h4>
+<p><strong>贝塞尔曲线</strong>-控制柄，类似钢笔工具</p>
+<p><strong>NURBS曲线</strong>-控制点，每个控制点会多一个W特性</p>
+<p><strong>给曲线增加倒角的三种方式</strong>：圆，物体，轮廓</p>
+<p><strong>闭合曲线</strong>：</p>
+<blockquote>
+<p>方法一：选中要闭合的两个点，F闭合</p>
+<p>方法二：选中一个点，Alt+C</p>
+</blockquote>
+<p><strong>断开曲线</strong>：选中两个点，X删除-段数</p>
+<p><strong>改变曲线倒角半径</strong>：Alt+S</p>
+<h4 id="5-2-父子级关系">5.2 父子级关系</h4>
+<p><strong>添加父级</strong>：Ctrl+P   <strong>清除父级</strong>：Alt+P</p>
+<ul>
+<li>在设置父级目标的时候选择顶点（基于三点）可以使物体跟随曲线曲率变动</li>
+</ul>
+<h4 id="5-3-蒙皮修改器">5.3 蒙皮修改器</h4>
+<p><strong>改变蒙皮点的半径</strong>：Ctrl+A</p>
+<ul>
+<li>勾选蒙皮修改器的平滑着色可以让模型平滑着色</li>
+</ul>
+<h3 id="6-【材质篇】Blender材质基础-原理化BSDF">6 【材质篇】Blender材质基础 原理化BSDF</h3>
+<ul>
+<li>材质新建原理化BSDF后，按<strong>Ctrl+T</strong>，插件会自动补全“图像纹理”、“映射”、“纹理坐标”这三个最常用的节点</li>
+</ul>
+<h4 id="6-1-属性">6.1 属性</h4>
+<p><strong>GGX</strong>-是一种微表面反射光照模型模型，有比较好的渲染效果</p>
+<p><strong>多重散射GGX</strong>-比这个GGX会在多计算一些微平面间的光线反弹和散射但是这个会比GGX慢，一般肉眼也看不出来，所以基本上就默认GGX就行了</p>
+<p><strong>随机游走</strong>-这一种模拟次表面的渲染方式，不支持EEVEE渲染器</p>
+<h4 id="6-2-输入参数">6.2 输入参数</h4>
+<p><strong>基础色</strong>-模型的颜色,也可以接一个颜色贴图,一般不要纯黑或者纯白</p>
+<p><strong>金属度</strong>-0是非金属，1是金属,一般我们要么选0，要么选1</p>
+<p><strong>糙度</strong>-0代表越平滑，1代表越粗糙，确定漫反射和镜面反射时候物体表面的粗糙程度</p>
+<p><strong>次表面</strong>-决定你的模型是不是透光的，比如皮肤，窗帘等的通透程度， 一般不会调太大，没有那么通透的东西</p>
+<p><strong>次表面半径</strong>-决定半透光散射的距离,三个值分别代表RGB三个通道的散射半径，</p>
+<p><strong>次表面颜色</strong>-次表面颜色决定透过去的颜色是什么样的，最终显示的是跟次表面半径相乘后显示的效果所以如果你想完全显示次表面颜色，次表面半径就全部设定为1<br>
+<strong>次表面IOR</strong>-次表面散射的折射率，仅支持cycles</p>
+<p><strong>次表面各向异性</strong>.次表面散射的方向，仅支持cycles</p>
+<p><strong>高光</strong>-代表物体的菲尼尔效应反射率程度，数值越大，高光反射量越大，高光越亮, 因为所有物体都是有一些菲尼尔反射的,所以高光这个值不要设为零,多少给一点。默认是0.5</p>
+<p><strong>高光染色</strong> -默认不设置的时候，物理默认的高光是白色的，但是你把高光染色调到1,就会被物体本身的颜色和谐, 一般金属高光会染色,非金属高光不会染色</p>
+<p><strong>各向异性过滤</strong>-调大的时候可以把一点的高光转换成沿切线方向的细长高光，仅支持cycles</p>
+<p><strong>各向异性旋转</strong>-比较常使用的是金属的部分，他可以控制你的金属的高光分布的方向， 仅支持cycles</p>
+<p><strong>光泽</strong>-用于布料的部分 ，调到1,有天鹅绒的效果,控制的是褶皱反光的反射数量，数值越大越明显光泽染色-会把材质颜色和白色光色混合</p>
+<p><strong>清漆</strong>-这个类似于给你的材质加了一层包光。多一层白色高光,常用与制作车漆材质</p>
+<p><strong>清漆粗糙度</strong>-就是你加这层清漆的粗糙度，</p>
+<p><strong>IOR折射率</strong>-透明材质常用的光折射率，可以网上搜索各种材质的IOR</p>
+<p><strong>透射</strong>-让你的模型透明，只有打开这个，IOR折射率和透射粗糙度才起作用，</p>
+<p><strong>透射粗糙度</strong> -物体内部的粗糙度,可以做毛玻璃</p>
+<p><strong>自发光</strong>-可以发光，霓虹灯</p>
+<p><strong>Alpha</strong>-默认是1，当是0的时候，物体完全消失不见，</p>
+<p><strong>法向</strong>-通常这个会链接PBR的normal map法线贴图</p>
+<p><strong>清漆法线</strong>-类似于汽车清漆的法线，可以接法线贴图</p>
+<p><strong>切向</strong> - 这个就是各向异性这种金属高光的方向。可以作为切向贴图接口</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://cosetteeeee.github.io">Cosetteeeee</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://cosetteeeee.github.io/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">http://cosetteeeee.github.io/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://cosetteeeee.github.io" target="_blank">Cosette's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Blender/">Blender</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E6%98%AF%E6%98%A5%E5%95%8A_%E6%A0%91%E4%B8%8A.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2025/12/04/leetcode1572.%E7%9F%A9%E9%98%B5%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%85%83%E7%B4%A0%E7%9A%84%E5%92%8C/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_Love%20Like%20Morning%20Sun.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">leetcode1572.矩阵对角线元素的和</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my blog!</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E3%80%90%E5%9F%BA%E7%A1%80%E7%AF%87%E3%80%91"><span class="toc-text">1 【基础篇】</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E4%B8%8B%E8%BD%BD%E4%B8%8E%E5%AE%89%E8%A3%85"><span class="toc-text">1.1 下载与安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E8%AE%A9%E6%89%8B%E5%90%AC%E8%AF%9D"><span class="toc-text">1.2 让手听话</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-%E8%A7%86%E8%A7%92%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="toc-text">1.2.1 视角的控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-%E7%89%A9%E4%BD%93%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="toc-text">1.2.2 物体的控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3-%E8%A7%86%E5%9B%BE%E7%9A%84%E5%88%87%E6%8D%A2"><span class="toc-text">1.2.3 视图的切换</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E8%AE%A4%E8%AF%86%E7%95%8C%E9%9D%A2"><span class="toc-text">1.3 认识界面</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-1-%E5%9F%BA%E6%9C%ACWorkflow"><span class="toc-text">1.3.1 基本Workflow</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-2-%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-text">1.3.2 快捷键</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-3-3-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5"><span class="toc-text">1.3.3 重要概念</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E6%9C%AC%E7%AB%A0%E7%BB%83%E4%B9%A0-%E7%8F%8D%E7%8F%A0%E8%80%B3%E7%8E%AF%E7%9A%84%E5%B0%91%E5%A5%B3"><span class="toc-text">1.4 本章练习 珍珠耳环的少女</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E3%80%90%E5%BB%BA%E6%A8%A1%E7%AF%87%E3%80%91"><span class="toc-text">2 【建模篇】</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%82%B9%E7%BA%BF%E9%9D%A2%E7%9A%84%E9%80%89%E6%8B%A9%E5%92%8C%E6%8E%A7%E5%88%B6"><span class="toc-text">2.1 点线面的选择和控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E6%A8%A1%E5%BC%8F%E5%88%87%E6%8D%A2"><span class="toc-text">2.1.1 模式切换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E7%82%B9%E7%BA%BF%E9%9D%A2%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-text">2.1.2 点线面的选择</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E7%82%B9%E7%BA%BF%E9%9D%A2%E7%9A%84%E6%8E%A7%E5%88%B6"><span class="toc-text">2.1.3 点线面的控制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E3%80%90%E5%BB%BA%E6%A8%A1%E7%AF%87%E3%80%91%E5%8D%81%E5%A4%A7%E5%BB%BA%E6%A8%A1%E6%93%8D%E4%BD%9C"><span class="toc-text">4 【建模篇】十大建模操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-%E5%8D%81%E5%A4%A7%E6%93%8D%E4%BD%9C%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-text">4.1 十大操作快捷键</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E3%80%90%E5%BB%BA%E6%A8%A1%E7%AF%87%E3%80%91%E6%9B%B2%E7%BA%BF%E5%BB%BA%E6%A8%A1%E3%80%81%E7%88%B6%E5%AD%90%E7%BA%A7%E5%92%8C%E8%92%99%E7%9A%AE%E4%BF%AE%E6%94%B9%E5%99%A8"><span class="toc-text">5 【建模篇】曲线建模、父子级和蒙皮修改器</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-%E6%9B%B2%E7%BA%BF%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C"><span class="toc-text">5.1 曲线基础操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-%E7%88%B6%E5%AD%90%E7%BA%A7%E5%85%B3%E7%B3%BB"><span class="toc-text">5.2 父子级关系</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-%E8%92%99%E7%9A%AE%E4%BF%AE%E6%94%B9%E5%99%A8"><span class="toc-text">5.3 蒙皮修改器</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E3%80%90%E6%9D%90%E8%B4%A8%E7%AF%87%E3%80%91Blender%E6%9D%90%E8%B4%A8%E5%9F%BA%E7%A1%80-%E5%8E%9F%E7%90%86%E5%8C%96BSDF"><span class="toc-text">6 【材质篇】Blender材质基础 原理化BSDF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-%E5%B1%9E%E6%80%A7"><span class="toc-text">6.1 属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-%E8%BE%93%E5%85%A5%E5%8F%82%E6%95%B0"><span class="toc-text">6.2 输入参数</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="【Kurt】Blender零基础入门课程笔记"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_%E6%98%AF%E6%98%A5%E5%95%8A_%E6%A0%91%E4%B8%8A.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【Kurt】Blender零基础入门课程笔记"/></a><div class="content"><a class="title" href="/2025/12/05/%E3%80%90Kurt%E3%80%91Blender%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" title="【Kurt】Blender零基础入门课程笔记">【Kurt】Blender零基础入门课程笔记</a><time datetime="2025-12-05T10:00:00.000Z" title="发表于 2025-12-05 18:00:00">2025-12-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/04/leetcode1572.%E7%9F%A9%E9%98%B5%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%85%83%E7%B4%A0%E7%9A%84%E5%92%8C/" title="leetcode1572.矩阵对角线元素的和"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_Love%20Like%20Morning%20Sun.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="leetcode1572.矩阵对角线元素的和"/></a><div class="content"><a class="title" href="/2025/12/04/leetcode1572.%E7%9F%A9%E9%98%B5%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%85%83%E7%B4%A0%E7%9A%84%E5%92%8C/" title="leetcode1572.矩阵对角线元素的和">leetcode1572.矩阵对角线元素的和</a><time datetime="2025-12-04T11:59:00.000Z" title="发表于 2025-12-04 19:59:00">2025-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/01/leetcode1672.%E6%9C%80%E5%AF%8C%E6%9C%89%E5%AE%A2%E6%88%B7%E7%9A%84%E8%B5%84%E4%BA%A7%E6%80%BB%E9%87%8F/" title="leetcode1672.最富有客户的资产总量"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_Love%20Like%20Morning%20Sun.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="leetcode1672.最富有客户的资产总量"/></a><div class="content"><a class="title" href="/2025/12/01/leetcode1672.%E6%9C%80%E5%AF%8C%E6%9C%89%E5%AE%A2%E6%88%B7%E7%9A%84%E8%B5%84%E4%BA%A7%E6%80%BB%E9%87%8F/" title="leetcode1672.最富有客户的资产总量">leetcode1672.最富有客户的资产总量</a><time datetime="2025-12-01T07:17:00.000Z" title="发表于 2025-12-01 15:17:00">2025-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/21/leetcode1041.%E5%9B%B0%E4%BA%8E%E7%8E%AF%E4%B8%AD%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="leetcode1041.困于环中的机器人"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_Love%20Like%20Morning%20Sun.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="leetcode1041.困于环中的机器人"/></a><div class="content"><a class="title" href="/2025/11/21/leetcode1041.%E5%9B%B0%E4%BA%8E%E7%8E%AF%E4%B8%AD%E7%9A%84%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="leetcode1041.困于环中的机器人">leetcode1041.困于环中的机器人</a><time datetime="2025-11-21T14:48:00.000Z" title="发表于 2025-11-21 22:48:00">2025-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/20/leetcode1275.%E6%89%BE%E5%87%BA%E4%BA%95%E5%AD%97%E6%A3%8B%E7%9A%84%E8%8E%B7%E8%83%9C%E8%80%85/" title="leetcode1275.找出井字棋的获胜者"><img src="https://cdn.jsdelivr.net/gh/Cosetteeeee/images/DannyLaiLai_Love%20Like%20Morning%20Sun.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="leetcode1275.找出井字棋的获胜者"/></a><div class="content"><a class="title" href="/2025/11/20/leetcode1275.%E6%89%BE%E5%87%BA%E4%BA%95%E5%AD%97%E6%A3%8B%E7%9A%84%E8%8E%B7%E8%83%9C%E8%80%85/" title="leetcode1275.找出井字棋的获胜者">leetcode1275.找出井字棋的获胜者</a><time datetime="2025-11-20T14:44:00.000Z" title="发表于 2025-11-20 22:44:00">2025-11-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2025 By Cosetteeeee</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my <a href="/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js"></script><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script></div><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法治,爱国,敬业,诚信,友善" data-fontsize="15px" data-random="false" async="async"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
